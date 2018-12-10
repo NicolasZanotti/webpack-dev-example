@@ -1,9 +1,8 @@
-const express = require('express')
 const webpack = require('webpack')
-const webpackDevMiddleware = require('webpack-dev-middleware')
-const webpackHotMiddleware = require('webpack-hot-middleware')
+const webpackDevMiddleware = require('webpack-dev-koa-middleware')
+const webpackHotMiddleware = require('webpack-hot-koa-middleware')
 
-const app = express()
+const app = new (require('koa'))()
 const config = require('./webpack.config.js')
 
 /*
@@ -18,6 +17,6 @@ config.entry = [
 const compiler = webpack(config)
 
 app.use(webpackHotMiddleware(compiler))
-app.use(webpackDevMiddleware(compiler, { publicPath: config.output.publicPath }))
+app.use(webpackDevMiddleware(compiler, { publicPath: config.output.publicPath }).middleware)
 
 app.listen(3000, () => console.log('App listening on port 3000'))

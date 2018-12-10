@@ -19,13 +19,11 @@
   },
   "homepage": "https://github.com/NicolasZanotti/webpack-dev-example#readme",
   "dependencies": {
-    "express": "^4.16.4",
-    "webpack": "^4.27.1"
-  },
-  "devDependencies": {
+    "koa": "^2.6.2",
+    "webpack": "^4.27.1",
     "clean-webpack-plugin": "^1.0.0",
     "html-webpack-plugin": "^3.2.0",
-    "webpack-dev-middleware": "^3.4.0",
-    "webpack-hot-middleware": "^2.24.3"
+    "webpack-dev-koa-middleware": "^1.0.2",
+    "webpack-hot-koa-middleware": "^1.0.1"
   }
 }
