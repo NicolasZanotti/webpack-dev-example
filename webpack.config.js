@@ -1,18 +1,16 @@
 const path = require('path')
+const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const CleanWebpackPlugin = require('clean-webpack-plugin')
 
 module.exports = {
   mode: 'development',
   devServer: {
     contentBase: './dist'
   },
+  entry: './src/index.js',
   plugins: [
-    new CleanWebpackPlugin(['dist']),
-    new HtmlWebpackPlugin({
-      title: 'Hello World',
-      template: './src/index.html'
-    })
+    new HtmlWebpackPlugin({ template: './src/index.html' }),
+    new webpack.HotModuleReplacementPlugin(),
   ],
   output: {
     filename: '[name].js',
