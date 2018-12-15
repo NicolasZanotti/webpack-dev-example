@@ -1,0 +1,4 @@
+version: '1'
+service:
+  name: webpack-dev-example
+  template: node-10

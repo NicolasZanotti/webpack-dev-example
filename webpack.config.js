@@ -5,11 +5,14 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 module.exports = {
   mode: 'development',
   devServer: {
-    contentBase: './dist'
+    contentBase: path.resolve(__dirname, 'dist')
   },
-  entry: './src/index.js',
+  entry: path.resolve(__dirname, './src/index.js'),
   plugins: [
-    new HtmlWebpackPlugin({ template: './src/index.html' }),
+    new HtmlWebpackPlugin({
+      filename: 'index.html',
+      template: path.resolve(__dirname, './src/template.html'),
+    }),
     new webpack.HotModuleReplacementPlugin(),
   ],
   output: {
