@@ -1,0 +1,6 @@
+pipeline:
+  install_node:
+    image: node:10-alpine
+    commands:
+    - npm install
+    - npm build
