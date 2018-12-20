@@ -2,3 +2,9 @@ version: '1'
 service:
   name: webpack-dev-example
   template: node-10
+  containers:
+    web:
+      dockerfile:
+        extra_run:
+          - npm install
+          - npm run build

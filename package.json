@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack",
+    "build": "./node_modules/.bin/webpack",
     "start": "node index"
   },
   "repository": {
@@ -19,11 +19,12 @@
   },
   "homepage": "https://github.com/NicolasZanotti/webpack-dev-example#readme",
   "dependencies": {
-    "koa": "^2.6.2",
-    "webpack": "^4.27.1",
-    "clean-webpack-plugin": "^1.0.0",
-    "html-webpack-plugin": "^3.2.0",
-    "webpack-dev-koa-middleware": "^1.0.2",
-    "webpack-hot-koa-middleware": "^1.0.1"
+    "clean-webpack-plugin": "1.0.0",
+    "html-webpack-plugin": "3.2.0",
+    "koa": "2.6.2",
+    "webpack": "4.27.1",
+    "webpack-cli": "3.1.2",
+    "webpack-dev-koa-middleware": "1.0.2",
+    "webpack-hot-koa-middleware": "1.0.1"
   }
 }
