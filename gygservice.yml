@@ -8,3 +8,9 @@ service:
         extra_run:
           - npm install
           - npm run build
+development:
+  containers:
+    web:
+      command:
+        - node
+        - index
