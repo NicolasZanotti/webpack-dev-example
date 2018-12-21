@@ -4,7 +4,7 @@ pipeline:
     image: node:10-alpine
     commands:
       - npm install
-      - npm build
+      - npm run build
   build-image:
     image: hub.gyg.io/drone-plugins/gyg-registry
     privileged: true
