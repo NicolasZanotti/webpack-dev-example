@@ -3,7 +3,7 @@ pipeline:
     image: node:10-alpine
     commands:
       - npm install
-      - npm run build
+      # Here would be a good place to add a build command…
   build-image:
     image: hub.gyg.io/drone-plugins/gyg-registry
     privileged: true
