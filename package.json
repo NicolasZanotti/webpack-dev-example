@@ -18,12 +18,13 @@
   },
   "homepage": "https://github.com/NicolasZanotti/webpack-dev-example#readme",
   "dependencies": {
-    "clean-webpack-plugin": "1.0.0",
+    "clean-webpack-plugin": "3.0.0",
     "html-webpack-plugin": "3.2.0",
-    "koa": "2.6.2",
-    "webpack": "4.27.1",
-    "webpack-cli": "3.1.2",
-    "webpack-dev-koa-middleware": "1.0.2",
-    "webpack-hot-koa-middleware": "1.0.1"
+    "koa": "2.11.0",
+    "lodash": "4.17.15",
+    "webpack": "4.42.0",
+    "webpack-cli": "3.3.11",
+    "webpack-dev-koa-middleware": "1.0.3",
+    "webpack-hot-koa-middleware": "1.0.3"
   }
 }
